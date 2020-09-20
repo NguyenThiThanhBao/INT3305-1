@@ -26,3 +26,5 @@ def approxEntropy(N:int, p:float, r:int)->float:
     for i in range(r,N+1):
         re+= prob(i,p,r)* infoMeasure(i,p,r)
     return re
+
+print(approxEntropy(1000,0.5,90))# xấp sỉ 5.7869
