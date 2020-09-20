@@ -12,7 +12,9 @@ def infoMeasure (n:int, p:float, r:int) -> float:
     return re
 
 def sumProb(N:int, p:float, r:int)->float:
-
+    '''
+        
+    '''
     sum=0
     for i in range (r,N+1):
         sum+=prob(i,p,r)
@@ -20,8 +22,7 @@ def sumProb(N:int, p:float, r:int)->float:
     return sum
 
 def approxEntropy(N:int, p:float, r:int)->float:
-
-
+    
     re=0
     for i in range(r,N+1):
         re+= prob(i,p,r)* infoMeasure(i,p,r)

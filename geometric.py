@@ -29,6 +29,7 @@ def approxEntropy(N:int,p:float)->float:
        p(i)=prob(i,p)
        Tổng vô hạn của -p(1)log(p(1))+ -p(2)log(p(2))+... 
        Đây là một dãy dương tăng và có giới hạn là entropy của biến ngẫu nhiên geometric nên khi N càng lớn thì hàm approxEntropy dẽ tiến đến entropy của biến ngẫu nhiên geometric
+       
 
     '''
     re=0

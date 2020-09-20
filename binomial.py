@@ -13,6 +13,9 @@ def sumProb(N:int,p:float)->float:
     '''
     BNN (Biến ngẫu nhiên) binomial chỉ có hữu hạn symbol, tổng xs của tất cả các symbol này bằng 1 
     Nên hàm sumProb kiểm tra tổng sx của BNN binomial bằng 1
+    áp dụng khai triển newton 
+    thì sum= pr(0,p,N)+pr(1,p,N)+....+pr(N,p,N) (pr là hàm prob)
+           =  (p+1-p)^N =1
     '''
     sum=0
     for i in range(0,N+1):
